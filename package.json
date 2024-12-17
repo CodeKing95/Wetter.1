@@ -1,19 +1,21 @@
 {
-  "homepage": "https://CodeKing95.github.io/wetter/",
+  "homepage": "https://CodeKing95.github.io/Wetter.git/",
   "name": "wetter",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "preview": "vite preview"
   },
   "devDependencies": {
-    "gh-pages": "^6.2.0",
     "sass": "^1.82.0",
     "vite": "^6.0.1"
+  },
+  "dependencies": {
+    "gh-pages": "^6.2.0"
   }
 }
